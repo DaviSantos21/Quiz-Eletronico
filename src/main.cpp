@@ -101,11 +101,28 @@ Pergunta banco[] = {
 
 const uint8_t TOTAL = sizeof(banco) / sizeof(banco[0]);
 
+void exibirPergunta(uint8_t index){
+Serial.println();
+Serial.print("Pergunta ");
+Serial.print(index + 1);
+Serial.print(" de ");
+Serial.println(TOTAL);
+Serial.println(banco[index].enunciado);
+for(uint8_t i = 0; i < 4; i++){
+Serial.print(char('A' + i));
+Serial.print(") ");
+Serial.println(banco[index].alternativas[i]);
+}
+}
+
 
 void setup() {
 
-  Serial.println("Electronic Quiz System iniciado!");
   Serial.begin(115200);
+  Serial.println("Electronic Quiz System iniciado!");
+  for(uint8_t i = 0; i < TOTAL; i++){
+    exibirPergunta(i);
+  }
 
 }
 
@@ -113,4 +130,5 @@ void setup() {
 
 void loop() {
 }
+
 
