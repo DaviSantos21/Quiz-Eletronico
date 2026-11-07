@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <ctype.h>
 
 
 struct Pergunta {
@@ -115,6 +116,12 @@ Serial.println(banco[index].alternativas[i]);
 }
 }
 
+int lerResposta(){
+  while(Serial.available() == 0){}
+  int resposta = Serial.parseInt();
+  while(Serial.available() > 0){Serial.read();}
+  return resposta;
+}
 
 void setup() {
 
@@ -124,9 +131,14 @@ void setup() {
     exibirPergunta(i);
   }
 
+  int escolha = lerResposta();
+
+  if (escolha - 1 == banco[0].correta) {
+    Serial.println("Acertou!");
+  } else {
+    Serial.println("Errou!");
+  }
 }
-
-
 
 void loop() {
 }
