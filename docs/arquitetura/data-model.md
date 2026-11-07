@@ -18,9 +18,9 @@ Uma pergunta deverá conter:
 
 ```cpp
 struct Pergunta {
-    String texto;
-    String alternativas[4];
-    int indiceCorreto;
+  const char* enunciado;
+  const char* alternativas[4];
+  uint8_t correta;   
 };
 ```
 
@@ -28,9 +28,9 @@ struct Pergunta {
 
 | Atributo | Tipo | Descrição |
 |---|---|---|
-| texto | String | Enunciado da pergunta. |
-| alternativas | String[4] | Quatro alternativas disponíveis. |
-| indiceCorreto | int | Índice da alternativa correta. |
+| enunciado | const char* | Enunciado da pergunta. |
+| alternativas | const char*[4] | Quatro alternativas disponíveis. |
+| correta | uint8_t | Índice da alternativa correta. |
 
 ## 5. Exemplo de utilização
 

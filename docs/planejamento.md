@@ -2,7 +2,7 @@
 
 ## 1. Visão Geral
 
-O **Electronic Quiz System** é um sistema de quiz eletrônico desenvolvido com o microcontrolador ESP32. Seu propósito é oferecer uma ferramenta interativa para testar conhecimentos, estimular a aprendizagem e permitir a autoavaliação dos participantes.
+O **Quiz Eletrônico** é um sistema de quiz eletrônico desenvolvido com o microcontrolador ESP32. Seu propósito é oferecer uma ferramenta interativa para testar conhecimentos, estimular a aprendizagem e permitir a autoavaliação dos participantes.
 
 O sistema apresentará perguntas e alternativas em um display, permitindo que o participante interaja por meio de botões físicos.
 

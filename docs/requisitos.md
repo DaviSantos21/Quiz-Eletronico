@@ -2,7 +2,7 @@
 
 ## 1. Introdução
 
-Este documento apresenta os requisitos funcionais e não funcionais do **Electronic Quiz System**, um quiz eletrônico desenvolvido com ESP32, cujo objetivo é proporcionar uma experiência interativa de aprendizagem e autoavaliação de conhecimentos.
+Este documento apresenta os requisitos funcionais e não funcionais do **Quiz Eletrônico**, um quiz eletrônico desenvolvido com ESP32, cujo objetivo é proporcionar uma experiência interativa de aprendizagem e autoavaliação de conhecimentos.
 
 ## 2. Requisitos Funcionais
 

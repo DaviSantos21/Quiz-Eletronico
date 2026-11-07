@@ -55,7 +55,7 @@ Responsável por verificar os acertos e atualizar a pontuação durante a execu�
 
 Responsável pela apresentação das perguntas, alternativas e resultados, além de permitir a interação do usuário com o sistema.
 
-## 5. Estrutura de Dados
+  ## 5. Estrutura de Dados
 
 As informações das perguntas serão representadas por uma estrutura (`struct`) em C++.
 
